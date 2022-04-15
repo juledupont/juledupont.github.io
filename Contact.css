@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "NewMachina";
+    src: url(PPNeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: "NewMachinaLight";
+    src: url(PPNeueMachina-Light.otf);
+}
+
+body{
+    height:100vh;
+    background: -webkit-linear-gradient(120deg, #84fab0 1%, #8fd3f4 100%);
+    font-family: "NewMachina";
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: white;
+    padding: 2.6em;
+    border-radius: 1em;
+}
+
+form img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    max-width: 30px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+form a{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+
+form *{
+    padding:1em;
+}
+
+input[type=submit]{
+    margin-top: 3em;
+    border: none;
+    
+}
+
+
+
+input[type=submit]:hover{
+    background-color: rgb(226, 223, 223);
+}
+
+input[type=submit]:focus{
+    background-color: rgb(192, 190, 190);    
+}
+
+input[type=text],input[type=email]{
+    width: 8em;
+    border: none;
+    border-bottom: 0.3em solid #06DAA0;
+    transition:all .3s;
+    outline: none;
+}
+
+input[type=text]:focus,input[type=email]:focus{
+    border-bottom:0.3em solid #369A7E;
+
+    width: 95%;
+    
+    
+}
+input, select, textarea{
+    font-family: "NewMachinaLight";
+}
+
+form h2{
+    border-bottom: 0.2em solid #06DAA0;
+    width: 9em;
+}
+
+#formulaire{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+
+}
