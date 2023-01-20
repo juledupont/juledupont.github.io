@@ -7,17 +7,32 @@
     
 </head>
 <body>
-    <div id="formulaire">
-        <form>
-            <a href="index.html"><img src="right-arrow.png" ></a>
+<header class="header">
+    <div class="header-part1">
+        <p>Jules Dupont</p>
+        <p>BUT Informatique Gradignan</p>
+        
+    </div>
+    <nav class="navMenu">
+        <a href="index.html">My Projects<div class="border-bottom"></div></a>
+        <a href="#">Me B)<div class="border-bottom"></div></a>
+        <a href="Contact.html">Contact<div class="border-bottom"></div></a>
+        
+        <div class="dot"></div>
+    </nav>
+    
+</header>
+
+    <div>
+        <form method="post" name="myemailform" action="form-to-email.php">
             <h2>CONTACT ME</h2>
             <label>Name</label>
             <input type="text" name="name" placeholder="Your name" >
             <label>Mail</label>
             <input type="email" name="mail" placeholder="Your mail">
             <label>Message</label>
-            <input type="text" name="message" placeholder="Your message">
-            <input type="submit" value="Submit">
+            <input type="textarea" name="message" placeholder="Your message">
+            <input type="submit" name="submit"value="Submit">
         </form>         
     </div>
 </body>
